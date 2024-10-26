@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body> 
+
+    <!-- navbar -->
+    <header class="nav-bar">
+        <h1 id="logo">Hannah</h1>
+
+        <!-- hamburger menu -->
+        <div class="side-menu">
+            <i class="fa-solid fa-x" id="cross-icon" onclick=hideSidemenu()></i>
+            <a href="#home" id="home-link" class="nav-link" onclick=hideSidemenu()>Home</a>
+            <a href="#about" id="about-link" class="nav-link" onclick=hideSidemenu()>About</a>
+            <a href="#education" id="education-link" class="nav-link" onclick=hideSidemenu()>Education</a>
+            <a href="#skills" id="skills-link" class="nav-link" onclick=hideSidemenu()>Skills</a>   
+        </div>
+
+        <!-- normal nav-bar -->
+        <div class="nav-links">
+            <a href="#home" id="home-link" class="nav-link hideonmobile">Home</a>
+            <a href="#about" id="about-link" class="nav-link hideonmobile">About</a>
+            <a href="#education" id="education-link" class="nav-link hideonmobile">Education</a>
+            <a href="#skills" id="skills-link" class="nav-link hideonmobile">Skills</a>  
+            <a href="#" class="hideonlaptop"><i class="fa-solid fa-bars" onclick=showSidemenu()></i></a>
+        </div>
+        </header>
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="left">
+            <h2>Hi there!</h2>
+            <h1>I'm Hannah</h1>
+            <h3>I'm a pre-final year CSE student pursuing web dev</h3>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/hannah-john-987070299/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/hana-maria"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="right">
+            <img src="pfp.png" id="pfp">
+        </div>
+    </section>
+
+    <!-- About-me -->
+    <section class="about-me" id="about">
+        <h1 class="headings">
+            <span>About</span> 
+            Me
+        </h1>
+        <p>I’m an undergraduate B.Tech student in Computer Science and Engineering, with a strong interest in web development. I have a solid foundation in front-end technologies like HTML, CSS, and JavaScript, 
+            and I’m passionate about enhancing my skills further. Currently, I’m diving into modern libraries such as React to build dynamic user interfaces and exploring backend technologies like Node.js to create full-stack applications. 
+            I’m committed to continuous learning and growth, always looking for opportunities to expand my knowledge and contribute to impactful projects.
+        </p>
+        <ul>
+            <li>
+                <span class="li-items">Name</span>
+                : Hannah Maria John
+            </li>
+            <li>
+                <span class="li-items">E-mail</span>
+                : hj0342@srmist.edu.in
+            </li>
+            <li>
+                <span class="li-items">Degree</span>
+                : B.Tech CSE
+            </li>
+        </ul>
+        <a href="https://drive.google.com/file/d/1goYMs_25u5Xglh9wJuEsFaO8xA8HOwq9/view" target="_blank">
+        <button id="cv-btn">Download CV</button>
+        </a>
+    </section>
+
+    <!-- Education -->
+    <section class="education" id="education">
+        <h1 class="headings">
+            <span>Academic</span> 
+            Credentials
+        </h1>
+        <div class="card-wrapper">
+            <div class="card" id="card1">
+                <h2>Degrees</h2>
+                <div class="line-container">
+                <div class="card-items">
+                    <p>
+                        <span>B.Tech CSE | 2022-2026</span>
+                        <br/>
+                        SRM Institute of Science and Technology
+                        <br/>
+                        CGPA - 9.63
+                    </p>
+                </div>
+                <div class="card-items">
+                    <p>
+                        <span>CBSE Class 12 | 2022</span>
+                        <br/>
+                        Bhavans Rajaji Vidyashram
+                        <br/>
+                        Subjects: English, Chemistry, Physics, Computer Science and Mathematics
+                        <br/>
+                        Board score - 86.7%   
+                    </p>
+                </div>
+                <div class="card-items">
+                    <p>
+                        <span>CBSE Class 10 | 2020</span>
+                        <br/>
+                        Bhavans Rajaji Vidyashram
+                        <br/>
+                        Subjects: English, Science, Social, French and Mathematics
+                        <br/>
+                        Board score - 95.6%
+
+                    </p>
+                </div>
+            </div>
+            </div>
+            <div class="card" id="card2">
+                <h2>Certifications</h2>
+                <div class="line-container">
+                <div class="card-items">
+                    <p>
+                        <span>NPTEL</span>
+                        <br/>
+                        <a href="https://drive.google.com/file/d/1lAhqIN3aV8DVhtMfshfuQs0A4pyhQKof/view?usp=sharing" target="_blank">
+                        Design and Analysis of Algorithms <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                        <br/>
+                        <a href="https://drive.google.com/file/d/1l_2LP76oNP_rfN5zi2CpXeCHDiI2B2Tu/view?usp=sharing" target="_blank">
+                        Introduction to Computer Architecture <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </p>
+                </div>
+                <div class="card-items">
+                    <p>
+                        <span>AWS</span>
+                        <br/>
+                        <a href="https://drive.google.com/file/d/15T67TqA8EmF5VN8YtpcGBtB8S0v06s7d/view?usp=sharing" target="_blank">
+                        Introduction to Machine Learning <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                        <br/> 
+                    </p>
+                </div>
+                <div class="card-items">
+                    <p>
+                        <span>Scalar</span>
+                        <br/>
+                        <a href="https://drive.google.com/file/d/1QZnYun1dj7K3Mt_AsrW5_NrniYAHm_-x/view?usp=sharing" target="_blank">
+                        Introduction to DBMS <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                        <br/>
+                        
+                    </p>
+                </div>
+                </div>
+            </div>
+            <div class="card" id="card3">
+                <h2>Clubs</h2>
+                <div class="line-container">
+                <div class="card-items">
+                    <p>
+                        <span>ACMSIGAI Student Chapter</span>
+                        <br/>
+                        Committee Member
+                        <br/>
+                        Domain: Women in Engineering
+                    </p>
+                </div>
+                <div class="card-items">
+                    <p>
+                        <span>SRM IEEE Student Chapter</span>
+                        <br/>
+                        Comittee Member
+                        <br/>
+                        Domain - Operations  
+                    </p>
+                </div>
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <h1 class="headings">
+            <span>Technical</span> 
+            Skills
+        </h1>
+
+        <div class="tech">
+            <div class="tech-icons">
+                <img src="assets/c.png">
+                <span>C</span>
+            </div>
+            <div class="tech-icons">
+                <img src="assets/c++.png">
+                <span>C++</span>
+            </div>
+            <div class="tech-icons">
+                <img src="assets/python.png">
+                <span>Python</span>
+            </div>
+            <div class="tech-icons">
+                <img src="assets/html.png">
+                <span>HTML5</span>
+            </div>
+            <div class="tech-icons">
+                <img src="assets/css.png">
+                <span>CSS3</span>
+            </div>
+            <div class="tech-icons">
+                <img src="assets/js.png">
+                <span>JavaScript</span>
+            </div>
+            <div class="tech-icons">
+                <img src="assets/mysql.png">
+                <span>MySQL</span>
+            </div>
+            <div class="tech-icons">
+                <img src="assets/git.png">
+                <span>Git</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact me -->
+    <section class="contact">
+        <h1 class="headings">
+            <span>Contact</span> 
+            Me
+        </h1>
+        <div class="input-boxes">
+        <div class="inputs">
+        <div class="line1-inputs">
+            <input type="text" placeholder="Name" id="name">
+            <input type="email" placeholder="E-mail" id="e-mail">
+        </div>
+        </div>
+        
+        <div class="inputs">
+            <input type="text" placeholder="Subject" id="subject">
+        </div>
+        <div class="inputs">
+            <textarea placeholder="Message" rows="10" id="message"></textarea>
+        </div>
+        </div>
+        <button class="send">Send</button>
+    </section>
+
+    <footer>
+        <div> © Created by Hannah | All rights reserved</div>
+    </footer>
+</body>
+<script src="js/script.js"></script>
+</html>
